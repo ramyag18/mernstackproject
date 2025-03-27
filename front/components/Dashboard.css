@@ -1,0 +1,71 @@
+/* Body Background */
+body {
+  background: linear-gradient(to right, #d9a7c7, #fffcdc); /* Applied the gradient */
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Dashboard Container */
+.dashboard-container {
+  padding: 20px;
+  text-align: center;
+  background: linear-gradient(to right, #d9a7c7, #fffcdc); /* Applied the same gradient */
+  min-height: 100vh;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+/* Dashboard Title */
+.dashboard-title {
+  font-size: 2rem;
+  color: #2c3e50; /* Deep blue */
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Info Cards */
+.info-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  color: #d63384; /* Soft red-pink */
+  margin-bottom: 10px;
+}
+
+.card p, .card ul {
+  font-size: 1rem;
+  color: #555;
+}
+
+.card ul {
+  padding-left: 20px;
+}
+
+.card li {
+  margin-bottom: 5px;
+}

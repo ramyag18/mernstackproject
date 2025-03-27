@@ -1,0 +1,73 @@
+.sidebar {
+  position: fixed;
+  top: 60px; /* Adjusted to match navbar height */
+  left: 0;
+  width: 250px;
+  height: calc(100vh - 60px); /* Adjust height dynamically */
+  background: #f8f9fa;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+}
+
+
+/* Pie Chart Legend */
+.legend {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.legend-color {
+  width: 12px;
+  height: 12px;
+  margin-right: 8px;
+  border-radius: 50%;
+}
+
+/* To-Do List */
+.todo-container {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.todo-container input {
+  flex: 1;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.todo-container button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.task-list li {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.task-list .completed {
+  text-decoration: line-through;
+  color: gray;
+}

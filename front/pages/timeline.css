@@ -1,0 +1,234 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #ffffff, #baa9e2);
+  margin: 0;
+  padding: 0;
+  justify-content: center; /* Centers horizontally */
+  align-items: center;  
+}
+
+/* Container for the entire component */
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers child elements horizontally */
+}
+
+/* Title styling */
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Task container to center task cards */
+.task-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centers items horizontally */
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* Individual task card styling */
+.task-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centers content vertically */
+  align-items: center;     /* Centers content horizontally */
+  padding: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  flex: 1 1 calc(33.33% - 20px);
+  max-width: calc(33.33% - 20px);
+  text-align: center;      /* Centers text horizontally */
+}
+
+.task-card:hover {
+  transform: scale(1.05);
+}
+
+/* Color classes for task cards */
+.bg-green-200 { background-color: #c3e6cb; }
+.bg-blue-200 { background-color: #b3d7ff; }
+.bg-yellow-200 { background-color: #fff3cd; }
+.bg-red-200 { background-color: #f8d7da; }
+.bg-purple-200 { background-color: #e2d5f8; }
+.bg-orange-200 { background-color: #ffe5b4; }
+.bg-teal-200 { background-color: #b2f0e4; }
+.bg-pink-200 { background-color: #f8d5e2; }
+
+/* Task title styling */
+.task-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Task dates styling */
+.task-dates {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+/* Task status styling */
+.task-status {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #333;
+}
+
+/* Button container styling */
+.task-buttons {
+  display: flex;
+  justify-content: center; /* Centers buttons horizontally */
+  margin-bottom: 20px;
+}
+
+/* Add and delete task button styling */
+.add-task-btn, .delete-task-btn {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.add-task-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.add-task-btn:hover {
+  background-color: #218838;
+}
+
+.delete-task-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.delete-task-btn:hover {
+  background-color: #c82333;
+}
+
+.delete-task-btn:disabled {
+  background-color: #e0e0e0;
+  cursor: not-allowed;
+}
+
+/* Task editor container styling */
+.task-editor {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers child elements horizontally */
+  margin-top: 20px;
+  text-align: center;  /* Centers text within the container */
+}
+
+/* Editor title styling */
+.editor-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Editor field container styling */
+.editor-field {
+  margin-bottom: 15px;
+}
+
+/* Editor label styling */
+.editor-label {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 5px;
+  color:#d34270
+}
+
+/* Editor input styling */
+.editor-input {
+  width: 100%;
+  padding: 8px;;
+  font-size: 1rem;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+}
+
+/* Calendar container styling */
+.calendar-container {
+  display: flex;
+  justify-content: center; /* Centers items horizontally */
+  margin-top: 20px;
+  background-color: #8a3636;
+}
+
+/* Custom calendar styling */
+.custom-calendar {
+  width: 100%;
+  max-width: 350px;
+  background-color: #8a3636;
+  border: 1px solid #a0a096;
+  border-radius: 8px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  margin: auto;
+}
+
+.custom-calendar .react-calendar__navigation button {
+  color: #7a68b6;
+  min-width: 44px;
+  background: none;
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+.custom-calendar .react-calendar__navigation button:enabled:hover,
+.custom-calendar .react-calendar__navigation button:enabled:focus {
+  background-color: #3939ad;
+}
+
+.custom-calendar .react-calendar__navigation button[disabled] {
+  background-color: #9a5959;
+}
+
+.custom-calendar abbr[title] {
+  text-decoration: none;
+}
+
+.custom-calendar .react-calendar__tile:enabled:hover,
+.custom-calendar .react-calendar__tile:enabled:focus {
+  background: #cc92e3;
+  color: #eb489c;
+  border-radius: 6px;
+}
+
+.custom-calendar .react-calendar__tile--now {
+  background: #6f48eb33;
+  border-radius: 6px;
+  font-weight: bold;
+  color: #6f48eb;
+}
+
+.custom-calendar .react-calendar__tile--now:enabled:hover,
+.custom-calendar .react-calendar__tile--now:enabled:focus {
+  background: #6f48eb33;
+  border-radius: 6px;
+  font-weight: bold;
+  color: #6f48eb;
+}
+
+.custom-calendar .react-calendar__tile--active {
+  background: #6f48eb;
+  border-radius: 6px;
+  font-weight: bold;
+  color: rgb(202, 135, 188);
+}
