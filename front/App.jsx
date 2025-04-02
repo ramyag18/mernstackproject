@@ -4,7 +4,7 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css"; // Import Toast CSS
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
-import Timeline from "./pages/Timeline";
+import TimelineCalendar from "./pages/Timeline"; // ✅ Updated Timeline Component Import
 import Team from "./pages/Team";
 import MPage from "./pages/MPage";
 import Dashboard from "./components/Dashboard";
@@ -32,7 +32,7 @@ const Layout = () => {
           <Routes>
             <Route path="/" element={<Dashboard />} /> {/* Home/Dashboard */}
             <Route path="/team" element={<Team />} />
-            <Route path="/timeline" element={<Timeline />} />
+            <Route path="/timeline" element={<TimelineCalendar />} /> {/* ✅ Updated Timeline Route */}
             <Route path="/signup" element={<SignUp />} />
             <Route path="/login" element={<Login />} />
           </Routes>
