@@ -6,7 +6,7 @@ import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
 import TimelineCalendar from "./pages/Timeline"; // ✅ Updated Timeline Component Import
 import Team from "./pages/Team";
-import MPage from "./pages/MPage";
+import MPage from "./pages/mpage";
 import Dashboard from "./components/Dashboard";
 import ProjectImportance from "./components/ProjectImportance";
 import SignUp from "./pages/SignUp";
