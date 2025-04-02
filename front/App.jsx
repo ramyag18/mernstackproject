@@ -9,7 +9,7 @@ import Team from "./pages/Team";
 import MPage from "./pages/mpage";
 import Dashboard from "./components/Dashboard";
 import ProjectImportance from "./components/ProjectImportance";
-import SignUp from "./pages/SignUp";
+import SignUp from "./pages/Signup";
 import Login from "./pages/Login";
 
 const Layout = () => {
